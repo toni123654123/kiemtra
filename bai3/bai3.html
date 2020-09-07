@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Kiểm tra nguyên âm</title>
+    <script src="bai3.js"></script>
 </head>
 <body>
 <h1>Kiểm tra</h1>
 Nhập chuỗi
-<input type="text" id="string"><br>
-<button onclick="checkGenerator(string, arr)">Kiểm tra</button>
-<p id="reslt"></p>
-<p id="reslut"></p>
-</body>
-<script src="bai3.js"></script>
+<!--<input type="text" id="string"><br>-->
+<!--&lt;!&ndash;<button onclick="checkGenerator()">Kiểm tra</button>&ndash;&gt;-->
+<!--<p id="reslut"></p>-->
 <script>
-    document.getElementById("reslt").innerText = arr;
+    let string= prompt("Nhập chuỗi vào đây");
+    let arr=['a','o','u','i','e','A','O','U','I','E'];
+    let a=checkGenerator(string,arr);
+    document.write(string +"<br>");
+    document.write("Dãy vừa nhập có "+ a+ " nguyên âm");
 </script>
+</body>
 </html>

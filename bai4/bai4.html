@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="bai4.js"></script>
+</head>
+<body>
+<script>
+    let objAnimal1= new Animal('','');
+    objAnimal1.setName('Elephant');
+    document.write("Tên con vật thứ nhất là: "+objAnimal1.getName() +"<br>");
+    objAnimal1.setWeight(45.6);
+    document.write( "Cân nặng con vật thứ nhất là: "+objAnimal1.getWeight()+"<br>");
+    document.write(objAnimal1.toString() +'<br>');
+    let objAnimal2= new Animal('Cat', 8);
+    document.write("Tên của con vật thứ 2 là: "+objAnimal2.name +"<br>");
+    objAnimal2.setName('Mouse');
+    document.write("Tên con vật thứ hai đổi tên thành:" +objAnimal2.getName());
+
+</script>
+
+</body>
+</html>
